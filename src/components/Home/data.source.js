@@ -1,4 +1,7 @@
 import React from 'react';
+import sig_en from '../../assets/img/Signatures-en.svg'
+import back from '../../assets/img/back-transp.svg'
+
 export const Banner01DataSource = {
   wrapper: { className: 'banner0 kgz3evotcrf-editor_css' },
   textWrapper: { className: 'banner0-text-wrapper' },
@@ -17,7 +20,7 @@ export const Nav00DataSource = {
   page: { className: 'home-page kgz3e5p0ex9-editor_css' },
   logo: {
     className: 'header0-logo',
-    children: 'https://os.alipayobjects.com/rmsportal/mlcYmsRilwraoAe.svg',
+    children: (<img src={sig_en} />),
   },
   Menu: {
     className: 'header0-menu',
@@ -507,7 +510,7 @@ export const Footer00DataSource = {
     children: (
       <span>
         ©2020{' '}
-        <a href target="_blank">
+        <a href target="https://zehao.mathemusics.com">
           Zehao Wang
         </a>.&nbsp;<span>All Rights Reserved.</span>
       </span>
