@@ -1,32 +1,19 @@
 import React from 'react';
-import sig_en from '../../assets/img/Signatures-en.svg'
-import back from '../../assets/img/back-transp.svg'
+import sig_en_light from '../../assets/img/Signatures-en-light.png'
 
-export const Banner01DataSource = {
-  wrapper: { className: 'banner0 kgz3evotcrf-editor_css' },
-  textWrapper: { className: 'banner0-text-wrapper' },
-  title: {
-    className: 'banner0-title',
-    children: 'https://zos.alipayobjects.com/rmsportal/HqnZZjBjWRbjyMr.png',
-  },
-  content: {
-    className: 'banner0-content',
-    children: '一个高效的页面动画解决方案',
-  },
-  button: { className: 'banner0-button', children: 'Learn More' },
-};
+
 export const Nav00DataSource = {
-  wrapper: { className: 'header0 home-page-wrapper kgz3f9n2l6-editor_css' },
-  page: { className: 'home-page kgz3e5p0ex9-editor_css' },
+  wrapper: { className: 'header0 home-page-wrapper kgzgtz131wc-editor_css' },
+  page: { className: 'home-page' },
   logo: {
     className: 'header0-logo',
-    children: (<img src={sig_en} />),
+    children: sig_en_light,
   },
   Menu: {
     className: 'header0-menu',
     children: [
       {
-        name: 'item~kgz4x2dlj7o',
+        name: 'item0',
         className: 'header0-item',
         children: {
           href: '#',
@@ -35,6 +22,75 @@ export const Nav00DataSource = {
               children: (
                 <span>
                   <p>Research</p>
+                </span>
+              ),
+              name: 'text',
+            },
+          ],
+        },
+        subItem: [
+          {
+            name: 'sub0',
+            className: 'item-sub',
+            children: {
+              className: 'item-sub-item',
+              children: [
+                {
+                  name: 'image0',
+                  className: 'item-image',
+                  children:
+                    'https://gw.alipayobjects.com/zos/rmsportal/ruHbkzzMKShUpDYMEmHM.svg',
+                },
+                {
+                  name: 'title',
+                  className: 'item-title',
+                  children: 'Ant Design',
+                },
+                {
+                  name: 'content',
+                  className: 'item-content',
+                  children: '企业级 UI 设计体系',
+                },
+              ],
+            },
+          },
+          {
+            name: 'sub1',
+            className: 'item-sub',
+            children: {
+              className: 'item-sub-item',
+              children: [
+                {
+                  name: 'image0',
+                  className: 'item-image',
+                  children:
+                    'https://gw.alipayobjects.com/zos/rmsportal/ruHbkzzMKShUpDYMEmHM.svg',
+                },
+                {
+                  name: 'title',
+                  className: 'item-title',
+                  children: 'Ant Design',
+                },
+                {
+                  name: 'content',
+                  className: 'item-content',
+                  children: '企业级 UI 设计体系',
+                },
+              ],
+            },
+          },
+        ],
+      },
+      {
+        name: 'item1',
+        className: 'header0-item',
+        children: {
+          href: '#',
+          children: [
+            {
+              children: (
+                <span>
+                  <p>Portfolio</p>
                 </span>
               ),
               name: 'text',
@@ -51,14 +107,13 @@ export const Nav00DataSource = {
             {
               children: (
                 <span>
-                  <p>Portfolio</p>
+                  <p>Blog</p>
                 </span>
               ),
               name: 'text',
             },
           ],
         },
-        subItem: null,
       },
       {
         name: 'item3',
@@ -69,30 +124,7 @@ export const Nav00DataSource = {
             {
               children: (
                 <span>
-                  <p>Blog</p>
-                </span>
-              ),
-              name: 'text',
-            },
-          ],
-        },
-      },
-      {
-        name: 'item1',
-        className: 'header0-item',
-        children: {
-          href: '#',
-          children: [
-            {
-              children: (
-                <span>
-                  <span>
-                    <span>
-                      <span>
-                        <p>About me</p>
-                      </span>
-                    </span>
-                  </span>
+                  <p>About me</p>
                 </span>
               ),
               name: 'text',
@@ -101,41 +133,16 @@ export const Nav00DataSource = {
         },
         subItem: [
           {
-            className: 'item-sub ant-menu-item kgz503hubz-editor_css',
+            className: 'item-sub',
             children: {
-              className: 'item-sub-item kgz4zzimmc-editor_css',
+              className: 'item-sub-item',
               children: [
                 {
                   name: 'title',
-                  className: 'item-title kgz50u9htxd-editor_css',
+                  className: 'item-title',
                   children: (
                     <span>
-                      <span>
-                        <span>
-                          <span>
-                            <p>Short bio</p>
-                          </span>
-                        </span>
-                      </span>
-                    </span>
-                  ),
-                },
-              ],
-            },
-          },
-          {
-            className: 'item-sub ant-menu-item kgz503hubz-editor_css',
-            children: {
-              className: 'item-sub-item kgz4zzimmc-editor_css',
-              children: [
-                {
-                  name: 'title',
-                  className: 'item-title kgz50u9htxd-editor_css',
-                  children: (
-                    <span>
-                      <span>
-                        <p>CV</p>
-                      </span>
+                      <p>CV</p>
                     </span>
                   ),
                 },
@@ -148,10 +155,21 @@ export const Nav00DataSource = {
   },
   mobileMenu: { className: 'header0-mobile-menu' },
 };
-export const Content00DataSource = {
-  wrapper: {
-    className: 'home-page-wrapper content0-wrapper kgz3mgcqcdt-editor_css',
+export const Banner01DataSource = {
+  wrapper: { className: 'banner0' },
+  textWrapper: { className: 'banner0-text-wrapper' },
+  title: {
+    className: 'banner0-title',
+    children: 'https://zos.alipayobjects.com/rmsportal/HqnZZjBjWRbjyMr.png',
   },
+  content: {
+    className: 'banner0-content',
+    children: '一个高效的页面动画解决方案',
+  },
+  button: { className: 'banner0-button', children: 'Learn More' },
+};
+export const Content00DataSource = {
+  wrapper: { className: 'home-page-wrapper content0-wrapper' },
   page: { className: 'home-page content0' },
   OverPack: { playScale: 0.3, className: '' },
   titleWrapper: {
@@ -161,9 +179,7 @@ export const Content00DataSource = {
         name: 'title',
         children: (
           <span>
-            <span>
-              <p>Education Background</p>
-            </span>
+            <p>Education Background</p>
           </span>
         ),
       },
@@ -199,24 +215,13 @@ export const Content00DataSource = {
               name: 'content',
               children: (
                 <span>
-                  <span>
-                    <span>
-                      <span>
-                        <span>
-                          <span>
-                            <p>
-                              A professional pianist specializing in piano
-                              accompaniment. Plenty of experiences in music
-                              composition, production, and conducting.
-                            </p>
-                          </span>
-                        </span>
-                      </span>
-                    </span>
-                  </span>
+                  <p>
+                    A professional pianist specializing in piano accompaniment.
+                    Plenty of experiences in music composition, production, and
+                    conducting.
+                  </p>
                 </span>
               ),
-              className: 'kgz42ugh3dt-editor_css',
             },
           ],
         },
@@ -240,9 +245,7 @@ export const Content00DataSource = {
               className: 'content0-block-title',
               children: (
                 <span>
-                  <span>
-                    <p>Math &amp; Data Science</p>
-                  </span>
+                  <p>Math &amp; Data Science</p>
                 </span>
               ),
             },
@@ -251,25 +254,13 @@ export const Content00DataSource = {
               children: (
                 <span>
                   <span>
-                    <span>
-                      <span>
-                        <span>
-                          <span>
-                            <span>
-                              <p>
-                                Olympiad awarding-winning math student, now
-                                focusing on applied math including Deep Learning
-                                and DSP.
-                              </p>
-                            </span>
-                          </span>
-                        </span>
-                      </span>
-                    </span>
+                    <p>
+                      Olympiad awarding-winning math student, now focusing on
+                      applied math including Deep Learning and DSP.
+                    </p>
                   </span>
                 </span>
               ),
-              className: 'kgz41qjs1og-editor_css',
             },
           ],
         },
@@ -293,11 +284,7 @@ export const Content00DataSource = {
               className: 'content0-block-title',
               children: (
                 <span>
-                  <span>
-                    <span>
-                      <p>Psychology</p>
-                    </span>
-                  </span>
+                  <p>Psychology</p>
                 </span>
               ),
             },
@@ -305,12 +292,10 @@ export const Content00DataSource = {
               name: 'content',
               children: (
                 <span>
-                  <span>
-                    <p>
-                      Double major in Psychology and Cognitive Science with a
-                      well-trained scientific research background.
-                    </p>
-                  </span>
+                  <p>
+                    Double major in Psychology and Cognitive Science with a
+                    well-trained scientific research background.
+                  </p>
                 </span>
               ),
             },
@@ -332,15 +317,7 @@ export const Content90DataSource = {
           'https://gw.alipayobjects.com/zos/rmsportal/PiqyziYmvbgAudYfhuBr.svg',
         className: 'title-image',
       },
-      {
-        name: 'title',
-        children: (
-          <span>
-            <p>Experience</p>
-          </span>
-        ),
-        className: 'title-h1',
-      },
+      { name: 'title', children: '会议日程', className: 'title-h1' },
     ],
   },
   block: {
@@ -363,56 +340,11 @@ export const Content90DataSource = {
             children:
               'https://gw.alipayobjects.com/zos/rmsportal/qJnGrvjXPxdKETlVSrbe.svg',
           },
-          name: {
-            className: 'block-name',
-            children: (
-              <span>
-                <p>
-                  <br />
-                </p>
-              </span>
-            ),
-          },
-          post: {
-            className: 'block-post',
-            children: (
-              <span>
-                <p>
-                  <br />
-                </p>
-              </span>
-            ),
-          },
-          time: {
-            className: 'block-time',
-            children: (
-              <span>
-                <p>2017 - 2021 (Expected)</p>
-              </span>
-            ),
-          },
-          title: {
-            className: 'block-title',
-            children: (
-              <span>
-                <span>
-                  <h3>Peking University</h3>
-                </span>
-              </span>
-            ),
-          },
-          content: {
-            className: 'block-content',
-            children: (
-              <span>
-                <span>
-                  <span>
-                    <li>Major in Math</li>
-                  </span>
-                </span>
-              </span>
-            ),
-          },
+          name: { className: 'block-name', children: '姓名' },
+          post: { className: 'block-post', children: '公司 职位' },
+          time: { className: 'block-time', children: '09:00 - 10:00' },
+          title: { className: 'block-title', children: '开幕致辞' },
+          content: { className: 'block-content', children: '' },
         },
       },
       {
@@ -509,10 +441,15 @@ export const Footer00DataSource = {
     className: 'copyright',
     children: (
       <span>
-        ©2020{' '}
-        <a href target="https://zehao.mathemusics.com">
-          Zehao Wang
-        </a>.&nbsp;<span>All Rights Reserved.</span>
+        <span>
+          <span>
+            ©2020{' '}
+            <a href="https://zehao.mathemusics.com" target="_blank">
+              Zehao Wang
+            </a>{' '}
+            All Rights Reserved
+          </span>
+        </span>
       </span>
     ),
   },

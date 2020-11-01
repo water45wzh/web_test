@@ -3,15 +3,15 @@
 import React from 'react';
 import { enquireScreen } from 'enquire-js';
 import scrollScreen from 'rc-scroll-anim/lib/ScrollScreen';
-import Banner0 from './Banner0';
 import Nav0 from './Nav0';
+import Banner0 from './Banner0';
 import Content0 from './Content0';
 import Content9 from './Content9';
 import Footer0 from './Footer0';
 import Point from './Point';
 import {
-  Banner01DataSource,
   Nav00DataSource,
+  Banner01DataSource,
   Content00DataSource,
   Content90DataSource,
   Footer00DataSource,
@@ -62,16 +62,16 @@ export default class Home extends React.Component {
 
   render() {
     const children = [
-      <Banner0
-        id="Banner0_1"
-        key="Banner0_1"
-        dataSource={Banner01DataSource}
-        isMobile={this.state.isMobile}
-      />,
       <Nav0
         id="Nav0_0"
         key="Nav0_0"
         dataSource={Nav00DataSource}
+        isMobile={this.state.isMobile}
+      />,
+      <Banner0
+        id="Banner0_1"
+        key="Banner0_1"
+        dataSource={Banner01DataSource}
         isMobile={this.state.isMobile}
       />,
       <Content0
@@ -94,7 +94,7 @@ export default class Home extends React.Component {
       />, // 导航和页尾不进入锚点区，如果需要，自行添加;
       <Point
         key="list"
-        data={['Banner0_1', 'Nav0_0', 'Content0_0', 'Content9_0', 'Footer0_0']}
+        data={['Nav0_0', 'Banner0_1', 'Content0_0', 'Content9_0', 'Footer0_0']}
         stroke="point-stroke"
       />,
     ];
